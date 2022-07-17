@@ -430,15 +430,34 @@ label:hover .language-back {
     float: right;
     width: 124px;
     height: 39px;
-    background-image: url(../img/description-button.png);
+    /* background-image: url(../img/description-button!.png);
     border: none;
-    background-position: 0px -3px;
+    background-position: 0px -3px; */
     color: #ffffff;
     font-family: "verdana-bold";
     font-size: 15px;
     margin: 74px 87px 0 0;
+    border-radius: 9px;
+    /* кнопка с градиентом и анимацией */
+    background: linear-gradient(180deg, #8ac7df, #2e77d6);
+    border: 1px;
+    border-color: #a1d7fd;
+    animation: gradient 3s cubic-bezier(0.4, 0, 1, 1) infinite;
+    background-size: 300% 300%;
+    cursor: pointer;
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 50% 0%;
+    }
+}
 
 .description__main-text {
     margin: 11px 0 0 0;
