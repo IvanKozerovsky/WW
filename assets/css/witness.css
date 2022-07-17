@@ -293,6 +293,7 @@ label:hover .language-back {
 .nav-1 {
     position: absolute;
     text-transform: uppercase;
+    margin: 9px 0 0 0px;
 }
 .nav-blocks-1 {
     list-style: none;
