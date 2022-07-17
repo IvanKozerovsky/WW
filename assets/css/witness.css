@@ -303,8 +303,9 @@ label:hover .language-back {
 .conteiner {
 }
 .nav {
-    width: 954px;
-    margin: 0 auto;
+    margin: 7px 0 0 0;
+    /* width: 954px;
+    margin: 0 auto; */
     /* position: absolute; */
 }
 .nav-blocks {
