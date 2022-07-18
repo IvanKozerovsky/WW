@@ -297,11 +297,15 @@ label:hover .language-back {
 }
 .nav-blocks-1 {
     list-style: none;
-    margin: 0 0 0 0;
+    
+    margin: 0 0 0 -42px;
 }
 .nav-blocks-1 li{
     float: left;
     padding: 0 0 0 0;
+    color: #666666;
+    font-family: "arial-bold";
+    font-size: 15px;
 }
 .nav-blocks-1 li:not(:last-child){
     margin: -9px 0px 0px 0px ;
@@ -319,7 +323,7 @@ label:hover .language-back {
     background-repeat: no-repeat;
     z-index: 3;
     padding: 13px 119px;
-    margin: -9px 0px 0px 194px;
+    margin: -9px 0px 0px 219px;
     color: #4fc6f0;
     -webkit-text-stroke: 1px #0952a7;
     font-family: "arial-bold";
@@ -332,14 +336,15 @@ label:hover .language-back {
 }
 #home-1 {
     background-image: url(../img/die.png);
-    background-size: 257px 57px;
+    background-size: 300px 57px;
     background-position: -2px -13px;
     background-repeat: no-repeat;
     z-index: 0;
+    padding: 11px 59px 11px 138px;
 }
     #basic-1 {
         background-image: url(../img/die.png);
-        background-size: 257px 57px;
+        background-size: 300px 57px;
         background-position: -2px -13px;
         background-repeat: no-repeat;
         padding: 11px 87px 11px 87px;
@@ -347,19 +352,29 @@ label:hover .language-back {
     }
         #pro-1 {
             background-image: url(../img/die.png);
-            background-size: 257px 57px;
-            background-position: -17px -13px;
+            background-size: 300px 57px;
+            background-position: -36px -13px;
             background-repeat: no-repeat;
-            padding: 11px 87px 11px 87px;
-            z-index: 0;
+            /* padding: 11px 87px 11px 87px;
+            z-index: 0; */
+
+            padding: 11px 148px 11px 83px;
+            z-index: 2;
+            position: relative;
+            margin: -9px 0 0 7px;
         }
             #blog-1 {    
                 background-image: url(../img/die.png);
-                background-size: 257px 57px;
-                background-position: -29px -13px;
+                background-size: 300px 57px;
+                background-position: -14px -13px;
                 background-repeat: no-repeat;
-                padding: 11px 96px 11px 87px;
-                z-index: 0;
+                padding: 11px 122px 11px 116px;
+                /* z-index: 0; */
+                
+                position: absolute;
+                right: -246px;
+                z-index: 1;
+                margin: -9px 28px 0 0;
             }
 /* ================================================================end-testnavigation=================================== */
 .main {
@@ -522,7 +537,7 @@ label:hover .language-back {
     border-radius: 9px;
     /* кнопка с градиентом и анимацией */
     background: linear-gradient(180deg, #8ac7df, #2e77d6);
-    border: 1px;
+    border: 2px;
     border-color: #a1d7fd;
     animation: gradient 3s cubic-bezier(0.4, 0, 1, 1) infinite;
     background-size: 300% 300%;
@@ -540,6 +555,10 @@ label:hover .language-back {
         background-position: 50% 0%;
     }
 }
+.description__button:hover {
+    opacity: 0.6;
+    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.45);
+} 
 
 .description__main-text {
     margin: 11px 0 0 0;
