@@ -692,15 +692,20 @@ td:nth-child(1) {
     /* margin: 0px 0 0 11px; */
 }
 .featurs__items > *:not(:first-child) {
-    margin: 0px 0 0 11px;
+    margin: 0px 0 0 44px;
+}
+
+.featurs__items :last-child {
+    float:right;
 }
 
 .featurs__text {
     color: #727272;
     float: left;
-    width: 225px;
+    width: 200px;
     font-family: "arial";
-    /* font-size: 13px; */
+    font-size: 13px;
+    line-height: 21px;
 }
 
 .featurs__text-1 {
