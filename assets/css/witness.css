@@ -8,6 +8,11 @@
     font-family: "myriad-bold";
     src: url("../font/Myriad\ Pro\ Bold\ SemiExtended.otf")
    }
+   
+@font-face {
+    font-family: "myriad";
+    src: url("../font/ofont.ru_Myriad\ Pro.ttf")
+   }
 
 @font-face {
     font-family: "arial";
@@ -145,23 +150,27 @@ font-size: 12px;
 }
 .contact {
     padding: 26px;
-    margin-right: -18px;
+    margin-right: -14px;
 }
 .contact:hover {
-    background-image: url(../img/nav-hover-3.png);
+    /* background-image: url(../img/nav-hover-3.png); когда фон картинкой */
+    background: linear-gradient(324deg, rgba(13,143,254,0.7) 0%, rgba(9,30,120,0.7) 80%, rgba(15,49,84,0.7) 100%);
+    clip-path: polygon(0 0, 88% 0, 100% 100%, 12% 100%);
 }
 
 .nav-items a:hover {
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 26px;
+    padding: 7px 26px;
 }
 .cart {
     padding: 26px;
     margin-right: 14px;
 }
 .cart:hover {
-    background-image: url(../img/nav-hover.png);
+    /* background-image: url(../img/nav-hover.png); когда фон картинкой */
+    background: linear-gradient(324deg, rgba(13,143,254,0.7) 0%, rgba(9,30,120,0.7) 80%, rgba(15,49,84,0.7) 100%);
+    clip-path: polygon(0 0, 82% 0, 100% 100%, 18% 100%);
 }
 
 .nav__prodacts {
@@ -190,17 +199,18 @@ font-size: 12px;
     float: right;
 }
 .header-search {
-    border-color: rgb(43, 50, 60);
-    background-color: #113054;
-    width: 147px;
-    height: 18px;
+    border-color: #768ca930;
+    background: radial-gradient(circle, rgba(17,48,84,1) 0%, rgba(14,41,71,1) 95%, rgba(13,38,66,1) 100%);
+    width: 137px;
+    height: 19px;
     float: left;
     margin: 42px -26px 0px 0px;
     outline: none;
     color: white;
     font-family: 'arial';
     font-size: 12px;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
+    padding: 0 0 0 10px;
 }
 .header__search-button {
     background-position: right center;
@@ -217,20 +227,26 @@ font-size: 12px;
 }
 .search-button_glass {
 }
+input::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-family: "myriad";
+  }
 .header__language {
     list-style: none;
     color: white;
     float: right;
-    font-family: "verdana-bold";
+    font-family: "verdana";
     font-size: 10px;
     margin: 43px 4px 0 0;
 
 }
 .ru-back {
+    background: linear-gradient(0deg, rgba(13,143,254,1) 0%, rgba(9,30,120,1) 80%, rgba(15,49,84,1) 100%);
     background-image: 
     url(../img/language-line.png)
     ,
-    url(../img/selected-language.png)
+    /* url(../img/selected-language.png) */
     ;
     background-repeat: no-repeat, no-repeat;
     background-position: left, 1px;
@@ -241,6 +257,18 @@ background-image: url(../img/language-line.png);
 background-repeat: no-repeat;
 padding: 0 0 0 0;
 }
+.en-back:hover{
+    background: linear-gradient(0deg, rgba(13,143,254,1) 0%, rgba(9,30,120,1) 80%, rgba(15,49,84,1) 100%);
+}
+.en-back:hover ~ .ru-back {
+    background-image: 
+    url(../img/language-line.png)
+    ;
+    background-repeat: no-repeat, ;
+    background-position: left;
+    padding: 0 9px;
+}
+
 .language-back {
     display: none;
 }
