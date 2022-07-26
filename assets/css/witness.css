@@ -699,6 +699,8 @@ td:nth-child(1) {
     color: #727272;
     float: left;
     width: 225px;
+    font-family: "arial";
+    /* font-size: 13px; */
 }
 
 .featurs__text-1 {
